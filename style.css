@@ -4,16 +4,21 @@ body, html {
     margin: 0;
   }
 
-.background-img {
-    position: relative;
-    top: 0;
-    left: 0;
-    background-image: url("assets/caves-branch-MAP\ 3.JPG");
-     /* Full height */
-    height: 100vh;  
-    min-height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
+  .map-container{
+      position: absolute;
+      left: 65%;
+  }
+  .map-hide {
+    display: none;
+  }
+
+  .wrapper { 
+      position: fixed; 
+      left: 5%;
+      bottom: 0; 
+      margin: 0; 
+      width: 90%;
+  }
+
+  
+ 
