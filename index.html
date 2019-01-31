@@ -5,45 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Map Slider: A carousel slider with a Map</title>
-    <link rel="stylesheet" href="style.css"></link>
-    <link rel="stylesheet" href="glider.css"></link>
-    <link rel="stylesheet" href="magnifier.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
+   <!-- Compiled and minified CSS --> 
+    <link rel="stylesheet" href="css/magnifier.css"></link>
 </head>
-<script src="glider.js"></script>
-<script src="magnifier.js"></script>
-<body>
-    
-    <div class="map-container ">
-        <div class="mg-magnifier-container">
-                <img id="main-map" src="assets/caves-branch-MAP 3.JPG" width="500" height="300" alt="Planets" usemap="#mainMap">
-                <map name="mainMap"></map>
-            </div>
-    </div>
-    <button class="toggle-btn">Hide Map</button>
-    <div class="main">
-        <h1>Hello World</h1>
-    </div>
-    <div class="wrapper">
-        <div class="glider-contain">
-            <div class="glider">
-              <div><img src="assets/caves-branch-MAP 3.JPG" alt=""></div>  
-              <div><img src="assets/caves-branch-MAP 3.JPG" alt=""></div>  
-              <div><img src="assets/caves-branch-MAP 3.JPG" alt=""></div>  
-              <div><img src="assets/caves-branch-MAP 3.JPG" alt=""></div>  
-              <div><img src="assets/caves-branch-MAP 3.JPG" alt=""></div>  
-              <div><img src="assets/caves-branch-MAP 3.JPG" alt=""></div>  
-              <div><img src="assets/caves-branch-MAP 3.JPG" alt=""></div>  
-              <div><img src="assets/caves-branch-MAP 3.JPG" alt=""></div>  
-            </div>
-          
-            <button role="button" aria-label="Previous" class="glider-prev">«</button>
-            <button role="button" aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
-          </div>
-    </div>
-     
-
-</body>
  
-<script src="main.js"></script>
+<body>
+    <div class="map-container">
+        <img src="/assets/caves-branch-MAP 3.JPG" alt="" srcset="">
+    </div>
+
+    <button id="modal-btn" class="button">Click somewhere in the map</button>
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="slider">
+            <div class="slides"> 
+                 <img src="assets/Cave_s Branch Selection/Botanical Garden/Edited/1512122_CO_114.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="carousel-slider">
+        <div class="carousel-slides">
+            <img src="assets/Cave_s Branch Selection/Botanical Garden/Edited/1512122_CO_114.jpg" alt="">
+        </div>
+        <div class="carousel-slides">
+                <img src="assets/Cave_s Branch Selection/Botanical Garden/Edited/1512122_CO_114.jpg" alt="">
+        </div>
+        <div class="carousel-slides">
+                <img src="assets/Cave_s Branch Selection/Botanical Garden/Edited/1512122_CO_114.jpg" alt="">
+        </div>
+        <div class="carousel-slides">
+                <img src="assets/Cave_s Branch Selection/Botanical Garden/Edited/1512122_CO_114.jpg" alt="">
+        </div>
+        <div class="carousel-slides">
+                <img src="assets/Cave_s Branch Selection/Botanical Garden/Edited/1512122_CO_114.jpg" alt="">
+        </div>
+    </div>
+  </div>
+</body> 
+<script src="js/main.js"></script>
 </html>
