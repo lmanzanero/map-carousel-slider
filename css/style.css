@@ -40,14 +40,14 @@ position: fixed;
 z-index: 1;
 left: 0;
 top: 0;
-height: 100%;
+height: 100vh;
 width: 100%;
-overflow: auto;
+overflow: hidden;
 background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
-margin: 1% auto;
+.modal-content { 
+margin: 1% auto; 
 width: 75%;
 box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 animation-name: modalopen;
@@ -55,30 +55,29 @@ animation-duration: 1s;
 }
 
 .slider img {
-    display: block;
-    margin: auto;
+    display: block; 
+    padding-bottom: 10px;
     width: 100%;
     height: 80vh;
 }
 
-.carousel-slider{
-    margin: auto;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; 
-}
-
-.carousel-slides {
-    margin: 0px 10px 5px 10px;
-    width: 200px;
-    height: 100px;
-}
-
-.carousel-slides img {
+.glider img {
+    display: block;
     width: 100%;
     height: 100%;
 }
+
+.glider-slide{
+    border: #000 1px solid;
+    margin: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.glider-slide:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+   
 .close { 
 color: #ccc;
 float: right;

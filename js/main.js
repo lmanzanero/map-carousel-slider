@@ -35,3 +35,16 @@ function outsideClick(e) {
  areas.forEach(el => el.addEventListener('click', function(){
    openModal();
  }));
+
+
+ //Glider
+
+ new Glider(document.querySelector('.glider'), {
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  draggable: true,  
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
