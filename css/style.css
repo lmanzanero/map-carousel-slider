@@ -4,6 +4,9 @@ body, html {
     margin: 0;
   }
  
+area {
+    border: solid green 3px;
+}
 .map-container {
     height:100vh;
     width: 100%;
