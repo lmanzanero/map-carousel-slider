@@ -48,32 +48,30 @@ function outsideClick(e) {
 
 
 
-const data = [
-  {
-    area1: ["img1", "img2", "img3"],
-  },
-  {
-    area2: ["img1", "img2", "img3"],
-  },
-  {
-    area3: ["img1", "img2", "img3"],
-  }
-];
+let data = ["area1", "img2", "img3"];
  
 
  areas.forEach(area =>  area.addEventListener('click', function(){
-   console.log(data);
+  
    console.log(currentImg);
    console.log(area.id);
    console.log(gliders);
 
-   const newGliders = data.map(glider =>   console.log(glider.area1));
-
-   console.log(newGliders);
+   
+   findArea(area.id);
  
   
    openModal();
  }));
 
+
+ function findAreaName(areaName){
+   console.log(areaName);
+   data.forEach(area => {
+     if(area == areaName){
+       console.log("finding Images");
+     }
+   });
+ }
 
   
