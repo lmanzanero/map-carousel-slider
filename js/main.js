@@ -58,7 +58,7 @@ let data = ["area1", "img2", "img3"];
    console.log(gliders);
 
    
-   findArea(area.id);
+   findAreaName(area.id);
  
   
    openModal();
