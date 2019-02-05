@@ -48,30 +48,46 @@ function outsideClick(e) {
 
 
 
-let data = ["area1", "img2", "img3"];
+let data = [
+   {
+    area1: ["http://www.thinkingparticle.com/sites/default/files/imagecache/node-gallery-display/Lush%20green%20khasi%20villages%20of%20Meghalaya.JPG", 
+            "https://i.pinimg.com/originals/29/d6/14/29d61437bd887b7913f24d54cf4fb44c.jpg", 
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsKyuMvvsnipK2TfMmQYmmEve7HbzUoKl5IhyJW4nny5VrNqLNg"],
+    area2: ["img11", 
+            "img22", 
+            "img33"],
+    area3: ["img13", 
+            "img23", 
+            "img33"],
+   }
+];
  
 
+//adds a click lister for each area on map
  areas.forEach(area =>  area.addEventListener('click', function(){
-  
-   console.log(currentImg);
-   console.log(area.id);
-   console.log(gliders);
+        //gets array of images for the area that was clicked
+        const currentArea = area.id;
+        const currentAreaImgs = data[0][currentArea];
 
-   
-   findAreaName(area.id);
- 
+        //clear glider innerhtml before adding new elements everytime new areas are clicked
+        gliders.innerHTML = "";
+         
+
+        //append all images for current area to glider dom element
+        currentAreaImgs.map(img =>  {
+          gliders.innerHTML += `
+              <div><img src="${img}"/></div>
+            `;
+          });
+
+          
+
+          console.log(gliders);
+          console.log(currentAreaImgs);
   
-   openModal();
+  openModal();
  }));
 
 
- function findAreaName(areaName){
-   console.log(areaName);
-   data.forEach(area => {
-     if(area == areaName){
-       console.log("finding Images");
-     }
-   });
- }
-
+ 
   
