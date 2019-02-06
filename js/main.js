@@ -1,15 +1,7 @@
 imageMapResize();
-//Glider
+//Carousel
 
-new Glider(document.querySelector('.glider'), {
-  slidesToShow: 5,
-  slidesToScroll: 5,
-  draggable: true,  
-  arrows: {
-    prev: '.glider-prev',
-    next: '.glider-next'
-  }
-});
+ 
 
 //  MODAL
 
@@ -44,7 +36,7 @@ function outsideClick(e) {
  
  const areas = document.querySelectorAll('area');
  const currentImg = document.querySelector('#currentImg');
- const gliders = document.querySelector('.glider-track');
+ const carousels = document.querySelector('.carousel-track');
 
 
 
@@ -52,7 +44,12 @@ let data = [
    {
     area1: ["http://www.thinkingparticle.com/sites/default/files/imagecache/node-gallery-display/Lush%20green%20khasi%20villages%20of%20Meghalaya.JPG", 
             "https://i.pinimg.com/originals/29/d6/14/29d61437bd887b7913f24d54cf4fb44c.jpg", 
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsKyuMvvsnipK2TfMmQYmmEve7HbzUoKl5IhyJW4nny5VrNqLNg"],
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsKyuMvvsnipK2TfMmQYmmEve7HbzUoKl5IhyJW4nny5VrNqLNg",
+            "https://i.pinimg.com/originals/29/d6/14/29d61437bd887b7913f24d54cf4fb44c.jpg", 
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsKyuMvvsnipK2TfMmQYmmEve7HbzUoKl5IhyJW4nny5VrNqLNg",
+            "https://i.pinimg.com/originals/29/d6/14/29d61437bd887b7913f24d54cf4fb44c.jpg", 
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsKyuMvvsnipK2TfMmQYmmEve7HbzUoKl5IhyJW4nny5VrNqLNg"
+          ],
     area2: ["img11", 
             "img22", 
             "img33"],
@@ -70,22 +67,17 @@ let data = [
         const currentAreaImgs = data[0][currentArea];
 
         //clear glider innerhtml before adding new elements everytime new areas are clicked
-        gliders.innerHTML = "";
+        carousels.innerHTML = "";
          
 
         //append all images for current area to glider dom element
         currentAreaImgs.map(img =>  {
-          gliders.innerHTML += `
-              <div><img src="${img}"/></div>
+          carousels.innerHTML += `
+              <div class="img-container"><img src="${img}"/></div>
             `;
           });
-
-          
-
-          console.log(gliders);
-          console.log(currentAreaImgs);
   
-  openModal();
+        openModal();
  }));
 
 

@@ -60,23 +60,64 @@ animation-duration: 1s;
     width: 100%;
     height: 80vh;
 }
+ 
+.carousel-container {
+    position: relative; 
+    top: -15px;
+    height: 100px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin: auto; 
+}
 
-.glider img {
-    display: block;
+.carousel-container .carousel-track {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll; 
+}
+
+.carousel-container button {
+    position: absolute; 
+    top: 40%;
+    margin: auto;
+    border: none;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.carousel-container button:hover {
+    background-color: rgba(253, 253, 253, 0.5);
+    color: black;
+    transition: 0.5s;
+}
+
+.carousel-container .carousel-next {
+    right: -22px;
+}
+.carousel-container .carousel-prev {
+    left: -22px;
+}
+
+.img-container { 
+    width: 200px;
+    min-width: 150px;
+    height: 90px;
+    margin: 5px;
+    padding: auto;
+}
+.img-container img { 
     width: 100%;
     height: 100%;
 }
-
-.glider-slide{
-    border: #000 1px solid;
-    margin: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.glider-slide:hover {
+.img-container img:hover {
+    padding: auto;
+    border: #3876ac 1px solid; 
+    transform: scale(1.03);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
+}
+ 
    
 .close { 
 color: #ccc;
