@@ -1,7 +1,5 @@
+//Makes map areas responsive
 imageMapResize();
-//Carousel
-
- 
 
 //  MODAL
 
@@ -33,7 +31,6 @@ function outsideClick(e) {
   }
 }
 
- 
  const areas = document.querySelectorAll('area');
  const currentImg = document.querySelector('#currentImg');
  const carousels = document.querySelector('.carousel-track');
@@ -60,7 +57,7 @@ let data = [
 ];
  
 
-//adds a click lister for each area on map
+//adds a click listener for each area on map
  areas.forEach(area =>  area.addEventListener('click', function(){
         //gets array of images for the area that was clicked
         const currentArea = area.id;
@@ -69,17 +66,35 @@ let data = [
         //clear glider innerhtml before adding new elements everytime new areas are clicked
         carousels.innerHTML = "";
          
-
         //append all images for current area to glider dom element
         currentAreaImgs.map(img =>  {
           carousels.innerHTML += `
               <div class="img-container"><img src="${img}"/></div>
             `;
           });
-  
+         
+        carouselFunctions();
         openModal();
+        
  }));
 
 
  
-  
+//Carousel Functionalities
+function carouselFunctions(){
+  const imgContainer = document.querySelectorAll('.img-container img');  
+
+  //set event listener to all carousel items
+  imgContainer.forEach(img => {
+     img.addEventListener('click', function(){
+         currentVideoStyle();
+     });
+  });
+
+  function currentVideoStyle(){
+    imgContainer.forEach(img => console.log("toggling styles"));
+  }
+}
+
+ 
+ 

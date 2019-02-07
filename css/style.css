@@ -93,6 +93,7 @@ animation-duration: 1s;
     transition: 0.5s;
 }
 
+
 .carousel-container .carousel-next {
     right: -22px;
 }
@@ -111,6 +112,13 @@ animation-duration: 1s;
     width: 100%;
     height: 100%;
 }
+.img-container .current {
+    padding: auto;
+    border: #3876ac 1px solid; 
+    transform: scale(1.03);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 .img-container img:hover {
     padding: auto;
     border: #3876ac 1px solid; 
