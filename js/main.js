@@ -69,7 +69,7 @@ let data = [
         //append all images for current area to glider dom element
         currentAreaImgs.map(img =>  {
           carousels.innerHTML += `
-              <div class="img-container"><img src="${img}"/></div>
+              <div class="img-container"><img class="image" src="${img}"/></div>
             `;
           });
          
@@ -83,17 +83,24 @@ let data = [
 //Carousel Functionalities
 function carouselFunctions(){
   const imgContainer = document.querySelectorAll('.img-container img');  
+  let currentCarousel = 0;
 
-  //set event listener to all carousel items
-  imgContainer.forEach(img => {
-     img.addEventListener('click', function(){
-         currentVideoStyle();
-     });
+  //sets first carousel as the active carousel
+  imgContainer[0].classList.add('current');
+   
+//set click event listener to all carousel items
+  imgContainer.forEach(img => { 
+     img.addEventListener('click', function(){ 
+
+      //loops to remove class '.current' from every carousel in image container before adding it again when clicked
+          imgContainer.forEach(img=> {
+            console.log(img);
+            img.classList.remove('current');
+          });
+          //adds class ".current" when current carousel is clicked
+          img.classList.add('current');
+     });  
   });
-
-  function currentVideoStyle(){
-    imgContainer.forEach(img => console.log("toggling styles"));
-  }
 }
 
  
