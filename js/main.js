@@ -38,21 +38,77 @@ function outsideClick(e) {
 
 
 let data = [
-   {
-    area1: ["http://www.thinkingparticle.com/sites/default/files/imagecache/node-gallery-display/Lush%20green%20khasi%20villages%20of%20Meghalaya.JPG", 
-            "https://i.pinimg.com/originals/29/d6/14/29d61437bd887b7913f24d54cf4fb44c.jpg", 
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsKyuMvvsnipK2TfMmQYmmEve7HbzUoKl5IhyJW4nny5VrNqLNg",
-            "https://i.pinimg.com/originals/29/d6/14/29d61437bd887b7913f24d54cf4fb44c.jpg", 
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsKyuMvvsnipK2TfMmQYmmEve7HbzUoKl5IhyJW4nny5VrNqLNg",
-            "https://i.pinimg.com/originals/29/d6/14/29d61437bd887b7913f24d54cf4fb44c.jpg", 
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsKyuMvvsnipK2TfMmQYmmEve7HbzUoKl5IhyJW4nny5VrNqLNg"
-          ],
-    area2: ["img11", 
-            "img22", 
-            "img33"],
-    area3: ["img13", 
-            "img23", 
-            "img33"],
+   { 
+     pool: ["assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Pool/1512122_CO_019.jpg", 
+            "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Pool/P1012363.jpg", 
+            "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Pool/Pool 4.jpg",
+            "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Pool/Pool 5.jpg", 
+            "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Pool/Saturday at Caves Branch.jpg"],
+    cheesehouse: ["assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Cheese House/CavesBranch2014_85.jpg", 
+            "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Cheese House/CIMG2792 - Copy - Copy.jpg",
+            "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Cheese House/Wine and Cheese Tasting.jpg"],
+    botanicalgarden: ["assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Botanical Garden/1512122_CO_114.jpg", 
+                     "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Botanical Garden/1512122_CO_269.jpg", 
+                     "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Botanical Garden/Caves Branch botanical garden 02.jpg"],
+    reception: [
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Reception/caves branch.jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Reception/CIMG2773.jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Reception/P1070317.jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Reception/P1070337.jpg"
+    ],
+    restaurant: [
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Restuarant/CavesBranch2014_110.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Restuarant/Restaurant25_InPixio.jpg" 
+    ],
+     bungalow: [
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Bungalow/Bungalow bed 7.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Bungalow/Bungalow bed 13.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Bungalow/cbjl_dh-1019.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Bungalow/cbjl_dh-1022.jpg"
+     ],
+     cabanas: [
+          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Cabanas/CVRoom9.jpg",
+          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Cabanas/CVRoom10.jpg",
+          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Cabanas/CVRoom27.jpg",
+          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Cabanas/CVRoom29.jpg",
+          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Cabanas/img_1789-img_1797g75.jpg",
+          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Cabanas/Jungle-Cabana.jpg"
+     ],
+     canopyrooms: [
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Canopy Rooms/balcony.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Canopy Rooms/bath3.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Canopy Rooms/bed2.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Canopy Rooms/lower balc.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Canopy Rooms/room 4.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Canopy Rooms/room3.jpg"
+     ],
+     riverview1: [
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 1 Bedroom/3.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 1 Bedroom/5.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 1 Bedroom/2014-06-05 12.26.40.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 1 Bedroom/Caves Branch 10.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 1 Bedroom/Caves Branch 16.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 1 Bedroom/img_1717-img_1725g75.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 1 Bedroom/Riverview 2 bed 1 floor bed 2.jpg"
+     ], 
+     riverview2: [
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 2 Bedroom/2-bed-riverview-2.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 2 Bedroom/2014-06-05 12.26.40-2.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 2 Bedroom/2014-06-05 12.26.40.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 2 Bedroom/cbjl_dh-1005.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 2 Bedroom/cbjl_dh-1012.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 2 Bedroom/cbjl_dh-1013.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 2 Bedroom/Image 4.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 2 Bedroom/Riverview 2 bed bath 1.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/River View 2 Bedroom/the test pic_.jpg"
+     ],
+     suite: [
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/cbjl_dh-1002.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/cbjl_dh-1027.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/Jungle Suite.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/Suite bath 1.jpg",
+         "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/Suite garden 2.jpg"
+     ]
    }
 ];
  
@@ -63,6 +119,8 @@ let data = [
         const currentArea = area.id;
         const currentAreaImgs = data[0][currentArea];
 
+        console.log(area);
+
         //clear glider innerhtml before adding new elements everytime new areas are clicked
         carousels.innerHTML = "";
          
@@ -71,8 +129,8 @@ let data = [
           carousels.innerHTML += `
               <div class="img-container"><img class="image" src="${img}"/></div>
             `;
-          });
-         
+          }); 
+
         carouselFunctions();
         openModal();
         
@@ -89,6 +147,8 @@ function carouselFunctions(){
 
   //sets first carousel as the active carousel
   imgContainer[0].classList.add('current');
+
+  getImgSrc(imgContainer[0].src);
    
 //set click event listener to all carousel items
   imgContainer.forEach((img, i) => { 

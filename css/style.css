@@ -4,9 +4,7 @@ body, html {
     margin: 0;
   }
  
-area {
-    border: solid green 3px;
-}
+  
 .map-container {
     height:100vh;
     width: 100%;
@@ -18,6 +16,7 @@ area {
     width: 100%;
 }
 
+ 
 .button {
 position: fixed;
 top: 50%;
@@ -74,6 +73,7 @@ animation-duration: 1s;
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    overflow-y: hidden;
     overflow-x: scroll; 
 }
 
