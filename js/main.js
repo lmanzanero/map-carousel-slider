@@ -99,10 +99,17 @@ function carouselFunctions(){
           //adds class ".current" when current carousel is clicked
           img.classList.add('current');
           currentCarousel = i;
-          console.log(currentCarousel);
+         
+          //replace current carousel with currentImg 
+          //  currentImg.src = imgContainer[currentCarousel].src;
+          getImgSrc(imgContainer[currentCarousel].src);
      });  
   });
 
+  //get current Image src
+  function getImgSrc(src){ 
+    currentImg.src = src;
+  }
 
  //loops to remove class '.current' from every carousel in image container before adding it again when clicked
   function clearCurrentClass(){
@@ -111,6 +118,7 @@ function carouselFunctions(){
     });
   }
 
+
 //carousel controls
   function rightArrowHandler(){
     //find current carousel and add class current to the following carosuel
@@ -118,10 +126,12 @@ function carouselFunctions(){
     if(currentCarousel < imgContainer.length - 1){
       currentCarousel++;
       imgContainer[currentCarousel].classList.add('current'); 
+      getImgSrc(imgContainer[currentCarousel].src);
     } else {
       //reset carousel index
       currentCarousel = 0;
       imgContainer[currentCarousel].classList.add('current'); 
+      getImgSrc(imgContainer[currentCarousel].src);
     }
       
   }
@@ -133,9 +143,11 @@ function carouselFunctions(){
     if(currentCarousel > 0){
       currentCarousel--;
       imgContainer[currentCarousel].classList.add('current'); 
+      getImgSrc(imgContainer[currentCarousel].src);
     } else {
       currentCarousel = imgContainer.length - 1;
       imgContainer[currentCarousel].classList.add('current'); 
+      getImgSrc(imgContainer[currentCarousel].src);
     }
   }
 
@@ -152,7 +164,9 @@ function carouselFunctions(){
        } else if (event.which == 39){
          //right arrow clicked
          rightArrowHandler();
-       }  
+       }  else {
+         console.log("Must click right or left only");
+       }
    }); 
 
 } 
