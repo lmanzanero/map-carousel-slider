@@ -83,25 +83,79 @@ let data = [
 //Carousel Functionalities
 function carouselFunctions(){
   const imgContainer = document.querySelectorAll('.img-container img');  
+  const rightArrow = document.querySelector('.carousel-next');
+  const leftArrow = document.querySelector('.carousel-prev');
   let currentCarousel = 0;
 
   //sets first carousel as the active carousel
   imgContainer[0].classList.add('current');
    
 //set click event listener to all carousel items
-  imgContainer.forEach(img => { 
+  imgContainer.forEach((img, i) => { 
      img.addEventListener('click', function(){ 
+       //clearing current class from all carousels  
+          clearCurrentClass();
 
-      //loops to remove class '.current' from every carousel in image container before adding it again when clicked
-          imgContainer.forEach(img=> {
-            console.log(img);
-            img.classList.remove('current');
-          });
           //adds class ".current" when current carousel is clicked
           img.classList.add('current');
+          currentCarousel = i;
+          console.log(currentCarousel);
      });  
   });
-}
+
+
+ //loops to remove class '.current' from every carousel in image container before adding it again when clicked
+  function clearCurrentClass(){
+    imgContainer.forEach(img=> { 
+      img.classList.remove('current');
+    });
+  }
+
+//carousel controls
+  function rightArrowHandler(){
+    //find current carousel and add class current to the following carosuel
+    clearCurrentClass(); 
+    if(currentCarousel < imgContainer.length - 1){
+      currentCarousel++;
+      imgContainer[currentCarousel].classList.add('current'); 
+    } else {
+      //reset carousel index
+      currentCarousel = 0;
+      imgContainer[currentCarousel].classList.add('current'); 
+    }
+      
+  }
+
+  function leftArrowHandler(){
+   //find current carousel and add class current to the previous carosuel
+   clearCurrentClass();
+
+    if(currentCarousel > 0){
+      currentCarousel--;
+      imgContainer[currentCarousel].classList.add('current'); 
+    } else {
+      currentCarousel = imgContainer.length - 1;
+      imgContainer[currentCarousel].classList.add('current'); 
+    }
+  }
+
+  rightArrow.addEventListener('click', rightArrowHandler);
+  leftArrow.addEventListener('click', leftArrowHandler);
+  
+  
+    //Space bar must be outside the function for it to work, not sure why yet...must research.
+   window.addEventListener("keydown", (event) => {
+     //If space bar (number 32) is clicked and pause is 
+      if(event.which == 37){
+         //left arrow clicked 
+           leftArrowHandler();
+       } else if (event.which == 39){
+         //right arrow clicked
+         rightArrowHandler();
+       }  
+   }); 
+
+} 
 
  
  
