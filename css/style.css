@@ -16,6 +16,10 @@ body, html {
     width: 100%;
 }
 
+area{
+    outline-color: green;
+    outline: 1; 
+}
  
 .button {
 position: fixed;
