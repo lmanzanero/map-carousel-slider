@@ -1,4 +1,4 @@
-//Makes map areas responsive
+ // //Makes map areas responsive
 imageMapResize();
 
 //  MODAL
@@ -231,5 +231,6 @@ function carouselFunctions(){
 
 } 
 
+ 
  
  
