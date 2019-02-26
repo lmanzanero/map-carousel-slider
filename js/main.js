@@ -109,7 +109,40 @@ let data = [
          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/Jungle Suite.jpg",
          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/Suite bath 1.jpg",
          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/Suite garden 2.jpg"
-     ]
+     ],
+     cavetour: [
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/Cave tubing IMG_3247.jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/Cave tubing IMG_3259.jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/Cave tubing IMG_3392.jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/Copy of tubing.jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/Crystal Thomas-Getting dirty.jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/Crystal Thomas-Riding on tractors.jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/tubing 2.jpg"
+      
+  ],
+    blackholedrop: [
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/black hole drop edited/black hole (1).jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/black hole drop edited/black hole (2).jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/black hole drop edited/black hole (3).jpg", 
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/black hole drop edited/black hole (5).jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/black hole drop edited/black hole (6).jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/black hole drop edited/black hole (7)(1).jpg",
+      "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/black hole drop edited/Black_Hole_Drop-3.jpg",
+    ],
+      rivercaveexpidition: [
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/River cave expidition Edited/2014-08-14 09.05.01.jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/River cave expidition Edited/988409_805800702816983_100442634958171604_n.jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/River cave expidition Edited/1009171_CO_0124.jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/River cave expidition Edited/1009171_CO_0128.jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/River cave expidition Edited/1009171_CO_0135.jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/River cave expidition Edited/1009171_CO_0137.jpg"
+    ],
+      waterfallcave: [
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/Waterfall cave Edited/waterfall cave 2(1).jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/Waterfall cave Edited/waterfall cave 3.jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/Waterfall cave Edited/waterfall cave epedition(1).jpg",
+        "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/Waterfall cave Edited/waterfall cave expedition.jpg"
+      ]
    }
 ];
  
