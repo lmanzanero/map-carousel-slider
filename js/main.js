@@ -1,5 +1,6 @@
  // //Makes map areas responsive
-imageMapResize();
+// const imageResizer = imageMapResize();
+
 
 //  MODAL
 
