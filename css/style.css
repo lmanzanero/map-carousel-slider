@@ -35,6 +35,7 @@ body, html {
 }
 
 .marker p:hover { 
+    color: yellow;
     text-shadow: 4px 4px 2px black;
 }
 
