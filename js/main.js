@@ -32,7 +32,7 @@ function outsideClick(e) {
   }
 }
 
- const areas = document.querySelectorAll('area');
+ const markers = document.querySelectorAll('.marker');
  const currentImg = document.querySelector('#currentImg');
  const carousels = document.querySelector('.carousel-track');
 
@@ -110,7 +110,7 @@ let data = [
          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/Suite bath 1.jpg",
          "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Rooms/Suite/Suite garden 2.jpg"
      ],
-     cavetour: [
+     sevenmilefloat: [
       "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/Cave tubing IMG_3247.jpg",
       "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/Cave tubing IMG_3259.jpg",
       "assets/MAP PROJECT FINAL PROCESSSED PHOTOS/Tours/7 mile cave tubing Edited/Cave tubing IMG_3392.jpg",
@@ -148,7 +148,7 @@ let data = [
  
 
 //adds a click listener for each area on map
- areas.forEach(area =>  area.addEventListener('click', function(){
+ markers.forEach(area =>  area.addEventListener('click', function(){
         //gets array of images for the area that was clicked
         const currentArea = area.id;
         const currentAreaImgs = data[0][currentArea];
@@ -170,6 +170,13 @@ let data = [
         
  }));
 
+//  areas.forEach(area => {
+//   area.addEventListener('mouseover', function(){
+    
+//     area.innerHTML += ``;
+//   });
+//  });
+
 
  
 //Carousel Functionalities
@@ -183,6 +190,8 @@ function carouselFunctions(){
   imgContainer[0].classList.add('current');
 
   getImgSrc(imgContainer[0].src);
+
+   
    
 //set click event listener to all carousel items
   imgContainer.forEach((img, i) => { 

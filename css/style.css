@@ -6,20 +6,193 @@ body, html {
  
   
 .map-container {
+    position: relative;
+    text-align: center;
+    display: block;
     height:100vh;
     width: 100%;
     margin: 0;
+    overflow: hidden;
 }
+/* 
+.markers {
+    position: relative;
+} */
+
+.marker {
+    position: absolute;   
+    /* width: 200px !important; */
+}
+
+.marker p { 
+    visibility: visible; 
+    margin: 0;
+    text-align: center;
+    font-family: Bradley hand;
+    color: white;
+    font-size: 25px;
+    text-shadow: 3px 3px 1px black;
+}
+
+.marker p:hover { 
+    text-shadow: 4px 4px 2px black;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+     .marker p {
+        visibility: hidden;
+     } 
+     
+  }
+
+
+#blackholedrop {
+    position: absolute;
+    top: 7%;
+    right: 41%;
+    width: 100%;
+    height: auto; 
+    /* border: 2px solid green; */
+}
+
+#sevenmilefloat {
+    position: absolute;
+    top: 85%;
+    right: 30%;
+    width: 100%;
+    height: auto; 
+    /* border: 2px solid green; */
+}
+
+#pool {
+    position: absolute;
+    top: 38%;
+    left:20.5%;
+    width: 100%;
+    height: auto; 
+}
+
+#cheesehouse {
+    position: absolute;
+    top: 35%;
+    left:40%;
+    width: 100%;
+    height: auto; 
+}
+
+#botanicalgarden {
+    position: absolute;
+    top: 46%;
+    left:39%;
+    width: 100%;
+    height: auto; 
+}
+
+#reception {
+    position: absolute;
+    top: 22%;
+    left:43%;
+    width: 100%;
+    height: auto; 
+}
+
+#waterfallcave {
+    position: absolute;
+    top: 5%;
+    left:43%;
+    width: 100%;
+    height: auto; 
+}
+
+#bungalow {
+    position: absolute;
+    top: 15%;
+    left:30%;
+    width: 100%;
+    height: auto; 
+}
+
+#cabana {
+    position: absolute;
+    top: 35%;
+    left:30%;
+    width: 100%;
+    height: auto; 
+ }
+
+ #suite {
+    position: absolute;
+    top: 22%;
+    left:25%;
+    width: 100%;
+    height: auto; 
+ }
+
+ #gazebo {
+    position: absolute;
+    top: 46%;
+    left:26%;
+    width: 100%;
+    height: auto;
+ }
+
+ #rivercaveexpidition {
+    position: absolute;
+    top: 83%;
+    left:42%;
+    width: 100%;
+    height: auto; 
+ }
+
+ #river {
+    position: absolute;
+    top: 63%;
+    left:1%;
+    width: 100%;
+    height: auto; 
+ }
+
+ #restaurant {
+    position: absolute;
+    top: 40%;
+    left:15%;
+    width: 100%;
+    height: auto; 
+ }
+
+ #canopyrooms {
+    position: absolute;
+    top: 19%;
+    left:4%;
+    width: 100%;
+    height: auto; 
+ }
+
+ #riverview1 {
+    position: absolute;
+    top: 48%;
+    right:15%;
+    width: 100%;
+    height: auto; 
+ }
+
+ 
+
+/* .location .icon {  
+   background:url(/map-pin.png) no-repeat; 
+   width:auto; 
+   height:40px;
+   display: inline-block; 
+} */
+ 
 
 .map-container img {
     height: 100%;
     width: 100%;
 }
-
-area{
-    outline-color: green;
-    outline: 1; 
-}
+ 
  
 .button {
 position: fixed;
@@ -50,6 +223,7 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content { 
+    top: 100px;
 margin: 1% auto; 
 width: 75%;
 box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
@@ -155,3 +329,27 @@ to {
   opacity: 1;
 }
 }
+
+/* Tool Tip */
+.tooltip {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
