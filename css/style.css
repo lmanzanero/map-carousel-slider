@@ -21,7 +21,9 @@ body, html {
 
 .marker {
     position: absolute;   
-    /* width: 200px !important; */
+    width: 10% !important;
+    min-width: 100px;
+    /* border: 2px solid red; */
 }
 
 .marker p { 
@@ -52,7 +54,7 @@ body, html {
 #blackholedrop {
     position: absolute;
     top: 7%;
-    right: 41%;
+    right: 83%;
     width: 100%;
     height: auto; 
     /* border: 2px solid green; */
@@ -60,8 +62,8 @@ body, html {
 
 #sevenmilefloat {
     position: absolute;
-    top: 85%;
-    right: 30%;
+    top: 87%;
+    left:10%;
     width: 100%;
     height: auto; 
     /* border: 2px solid green; */
@@ -70,7 +72,7 @@ body, html {
 #pool {
     position: absolute;
     top: 38%;
-    left:20.5%;
+    right:23%;
     width: 100%;
     height: auto; 
 }
@@ -78,7 +80,7 @@ body, html {
 #cheesehouse {
     position: absolute;
     top: 35%;
-    left:40%;
+    left:85%;
     width: 100%;
     height: auto; 
 }
@@ -86,7 +88,7 @@ body, html {
 #botanicalgarden {
     position: absolute;
     top: 46%;
-    left:39%;
+    left:85%;
     width: 100%;
     height: auto; 
 }
@@ -94,7 +96,7 @@ body, html {
 #reception {
     position: absolute;
     top: 22%;
-    left:43%;
+    left:87%;
     width: 100%;
     height: auto; 
 }
@@ -102,7 +104,7 @@ body, html {
 #waterfallcave {
     position: absolute;
     top: 5%;
-    left:43%;
+    left:87%;
     width: 100%;
     height: auto; 
 }
@@ -110,47 +112,47 @@ body, html {
 #bungalow {
     position: absolute;
     top: 15%;
-    left:30%;
+    left:75%;
     width: 100%;
     height: auto; 
 }
 
 #cabana {
     position: absolute;
-    top: 35%;
-    left:30%;
+    top: 30%;
+    left:75%;
     width: 100%;
     height: auto; 
  }
 
  #suite {
     position: absolute;
-    top: 22%;
-    left:25%;
+    top: 24%;
+    left:65%;
     width: 100%;
     height: auto; 
  }
 
  #gazebo {
     position: absolute;
-    top: 46%;
-    left:26%;
+    top: 48%;
+    left:73%;
     width: 100%;
     height: auto;
  }
 
  #rivercaveexpidition {
     position: absolute;
-    top: 83%;
-    left:42%;
+    top: 80%;
+    left:85%;
     width: 100%;
     height: auto; 
  }
 
  #river {
     position: absolute;
-    top: 63%;
-    left:1%;
+    top: 65%;
+    left:42%;
     width: 100%;
     height: auto; 
  }
@@ -158,23 +160,23 @@ body, html {
  #restaurant {
     position: absolute;
     top: 40%;
-    left:15%;
+    left:60%;
     width: 100%;
     height: auto; 
  }
 
  #canopyrooms {
     position: absolute;
-    top: 19%;
-    left:4%;
+    top: 15%;
+    left:49%;
     width: 100%;
     height: auto; 
  }
 
  #riverview1 {
     position: absolute;
-    top: 48%;
-    right:15%;
+    top: 46%;
+    left:22%;
     width: 100%;
     height: auto; 
  }
