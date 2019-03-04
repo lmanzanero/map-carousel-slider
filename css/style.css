@@ -33,12 +33,24 @@ body, html {
     font-family: Bradley hand;
     color: white;
     font-size: 25px;
-    text-shadow: 3px 3px 1px black;
+    text-shadow: px 3px 1px black;
+    transition: 0.5s;
 }
 
 .marker p:hover { 
     color: yellow;
     text-shadow: 4px 4px 2px black;
+    transition: 0.5s;
+}
+
+.marker i {
+    text-shadow: 1px 1px 1px black;
+    transition: 0.5s;
+}
+
+.marker i:hover {
+    text-shadow: 2px 2px 1px black;
+    transition: 0.5s;
 }
 
 @media only screen and (max-width: 768px) {
