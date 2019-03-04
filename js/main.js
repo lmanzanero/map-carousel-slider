@@ -162,13 +162,19 @@ let data = [
          "assets/CB Caves Branch Map Final/Canopy Tree house/Canopy-Tree-House-IMG_2553.jpg",
          "assets/CB Caves Branch Map Final/Canopy Tree house/Canopy-Tree-House-IMG_2670.jpg"
      ],
+     gazebo: [
+      "assets/CB Caves Branch Map Final/Jungle Gazebo/GazeboGazebo_ch.jpg",
+      "assets/CB Caves Branch Map Final/Jungle Gazebo/GazeboP1130112.jpg",
+      "assets/CB Caves Branch Map Final/Jungle Gazebo/GazeboP1130113.jpg",
+      "assets/CB Caves Branch Map Final/Jungle Gazebo/GazeboP1130116.jpg"
+  ],
      riverview1: [
          "assets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-3.jpg",
          "assets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-5.jpg",
-         "aassets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-2014-06-05 12.26.40.jpg",
+         "assets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-2014-06-05 12.26.40.jpg",
          "assets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-Caves Branch 10.jpg",
          "assets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-Caves Branch 16.jpg",
-         "aassets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-IMG_0382_enfusedA.jpg",
+         "assets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-IMG_0382_enfusedA.jpg",
          "assets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-img_1717-img_1725g75.jpg",
          "assets/CB Caves Branch Map Final/1 Bedroom river view treehouse/River-Tree-House-1Bed-Riverview 2 bed 1 floor bed 2.jpg"
      ], 
@@ -195,13 +201,21 @@ let data = [
          "assets/CB Caves Branch Map Final/Jungle Suite/Suite-Suite.jpg"
      ],
      sevenmilefloat: [
-      "assets/CB Caves Branch Map Final/Cave Tubing/CheeseSorensen Familly14.jpg",
       "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-Copy of tubing.jpg",
       "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-DSCN0984.jpg",
       "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-DSCN0988.jpg",
-      "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0002.jpg", 
-      
+      "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0002.jpg",
+      "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004.jpg",
+
   ],
+  river: [
+    "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-Copy of tubing.jpg",
+    "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-DSCN0984.jpg",
+    "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-DSCN0988.jpg",
+    "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0002.jpg",
+    "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004.jpg",
+    
+],
     blackholedrop: [
       "assets/CB Caves Branch Map Final/Black hole drop/black hole (1).jpg",
       "assets/CB Caves Branch Map Final/Black hole drop/black hole (2).jpg",
