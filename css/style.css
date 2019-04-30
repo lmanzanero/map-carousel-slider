@@ -39,19 +39,20 @@ body, html {
 
 .marker p:hover { 
     color: yellow;
-    text-shadow: 4px 4px 2px black;
-    transition: 0.5s;
+    text-shadow: 4px 4px 2px black; 
 }
 
-.marker i {
+/* .marker i {
     text-shadow: 1px 1px 1px black;
     transition: 0.5s;
-}
+} */
 
-.marker i:hover {
+/* .marker i:hover { 
     text-shadow: 2px 2px 1px black;
     transition: 0.5s;
-}
+} */
+
+ 
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */

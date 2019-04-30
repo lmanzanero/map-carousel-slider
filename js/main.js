@@ -411,6 +411,26 @@ function carouselFunctions(){
 
 } 
 
+
+// Toggling Styles
+function hoverMakers() {
+  const markers = document.querySelectorAll('.marker');
+
+  markers.forEach(marker => {
+    console.log(marker);
+    marker.addEventListener('mouseover', function(){
+      marker.style.textShadow = "2px 2px 1px black";
+      marker.style.transition = "0.5s";
+    });
+    marker.addEventListener('mouseout', function(){
+      marker.style.textShadow = "1px 1px 1px black";
+      marker.style.transition = "0.5s";
+    });
+  })
+  
+}
+
+hoverMakers();
  
  
  
