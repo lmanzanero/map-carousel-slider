@@ -4,6 +4,7 @@ body, html {
     margin: 0;
   }
  
+  /* adding a comment for testing */
 .rotate-device {
     position: absolute; 
     display: flex;
