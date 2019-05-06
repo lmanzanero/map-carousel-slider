@@ -4,12 +4,60 @@ body, html {
     margin: 0;
   }
  
+.rotate-device {
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.phone {
+    height: 50px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+    animation: rotate 1s ease-in-out infinite alternate;
+    /* display: none; */
+  }
+
+.message {
+    color: white;
+    font-size: 1em;
+    margin-top: 40px;
+    /* display: none; */
+  }
+
+  @keyframes rotate {
+    0% {
+          transform: rotate(0deg)
+      }
+      50% {
+          transform: rotate(-90deg)
+      }
+      100% {
+          transform: rotate(-90deg)
+      }
+  }
+
+  @media only screen and (orientation: landscape) {
+    .rotate-device {
+      display: none;
+      z-index: 0;
+    }
+  }
+  
+  
   
 .map-container {
     position: relative;
     text-align: center;
     display: block;
-    height:100vh;
+    height:100%;
     width: 100%;
     margin: 0; 
     overflow: hidden;
@@ -57,13 +105,11 @@ body, html {
     /* For mobile phones: */
      
      .map-container{
-         position: relative; 
-         display: inline-block;
+         position: relative;  
          width: 100vw;
          height: 100vh;
          margin: 0; 
-         padding: 0;
-         overflow: hidden;
+         padding: 0;  
      }
 
      .map-container img { 
@@ -71,6 +117,8 @@ body, html {
         height: 100%;
         padding: 0;
         margin: 0;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     .marker p { 
         font-size: 10px;
@@ -78,12 +126,7 @@ body, html {
         margin: 0; 
     }
     
-    .modal-content {
-        height: 75vh; 
-    }
-    .carousel-container {
-        height: 80px !important;
-    } 
+   
      
   }
 
@@ -244,28 +287,29 @@ background: #3876ac;
 }
 
 .modal {
-display: none;
-position: fixed;
-z-index: 1;
-left: 0;
-top: 0;
-height: 180vh; 
-width: 100%;
-overflow: hidden;
-background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%; 
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content { 
     top: 100px;
-margin: 1% auto; 
-width: 75%;
-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-animation-name: modalopen;
-animation-duration: 1s;
+    margin: 1% auto; 
+    width: 75%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
 }
 
 .slider img {
     display: block; 
+    margin: 0;
     padding-bottom: 10px;
     object-fit: cover;
     width: 100%;
