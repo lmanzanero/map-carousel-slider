@@ -9,6 +9,20 @@ const modal = document.querySelector('#my-modal');
 const modalBtn = document.querySelector('#modal-btn');
 const closeBtn = document.querySelector('.close');
 
+
+const moreCarousels = document.querySelector('.more');
+console.log(moreCarousels.style.display);
+moreCarousels.addEventListener('click', function(){
+  const carouselContainer = document.querySelector('.carousel-container');
+  
+
+  if (carouselContainer.style.display === "none") {
+    carouselContainer.style.display = "block";
+  } else {
+    carouselContainer.style.display = "none";
+  }
+});
+
 // Events
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
@@ -322,7 +336,7 @@ function carouselFunctions(){
   const rightArrow2 = document.querySelector('.carousel-next2');
   const leftArrow = document.querySelector('.carousel-prev');
   const leftArrow2 = document.querySelector('.carousel-prev2');
-  let currentCarousel = 0;
+  let currentCarousel = 0;  
 
 
   //sets first carousel as the active carousel

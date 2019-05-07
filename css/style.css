@@ -43,16 +43,7 @@ body, html {
       100% {
           transform: rotate(-90deg)
       }
-  }
-
-  @media only screen and (orientation: landscape) {
-    .rotate-device {
-      display: none;
-      z-index: 0;
-    }
-  }
-  
-  
+  } 
   
 .map-container {
     position: relative;
@@ -273,9 +264,14 @@ background: #3876ac;
     animation-duration: 1s;
 }
 
+.modal .more {
+    display: none;
+    background: #3876ac;
+    position: absolute; 
+}
 .slider {  
     margin: 0 auto; 
-    width: 85%;
+    width: 85%; 
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
@@ -429,5 +425,35 @@ to {
     .slides button {
         display: block;
     }
+
+    .slider img { 
+        height: 85vh;
+    }
+
+    .modal .more {
+        display: block;
+        margin: 0 auto;
+        background: #3876ac;
+        position: absolute;
+        right: 5px; 
+        bottom: 5px;
+    }
+
+    .carousel-container {
+        display: none;
+        position: relative; 
+        top: -100px;
+        height: 100px;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        margin: auto; 
+    }
      
+  }
+
+  @media only screen and (orientation: landscape) {
+    .rotate-device {
+      display: none;
+      z-index: 0;
+    }
   }
