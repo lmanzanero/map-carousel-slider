@@ -319,8 +319,11 @@ let data = [
 function carouselFunctions(){
   const imgContainer = document.querySelectorAll('.img-container img');  
   const rightArrow = document.querySelector('.carousel-next');
+  const rightArrow2 = document.querySelector('.carousel-next2');
   const leftArrow = document.querySelector('.carousel-prev');
+  const leftArrow2 = document.querySelector('.carousel-prev2');
   let currentCarousel = 0;
+
 
   //sets first carousel as the active carousel
   imgContainer[0].classList.add('current');
@@ -360,6 +363,7 @@ function carouselFunctions(){
 
 //carousel controls
   function rightArrowHandler(){
+    console.log(rightArrow, "Right");
     //find current carousel and add class current to the following carosuel
     clearCurrentClass(); 
     if(currentCarousel < imgContainer.length - 1){
@@ -391,7 +395,9 @@ function carouselFunctions(){
   }
 
   rightArrow.addEventListener('click', rightArrowHandler);
+  rightArrow2.addEventListener('click', rightArrowHandler);
   leftArrow.addEventListener('click', leftArrowHandler);
+  leftArrow2.addEventListener('click', leftArrowHandler);
   
   
     //Space bar must be outside the function for it to work, not sure why yet...must research.
