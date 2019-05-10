@@ -304,6 +304,7 @@ background: #3876ac;
 }
  
 .carousel-container {
+    display: block;
     position: relative; 
     top: -8px;
     height: 100px;
@@ -387,19 +388,17 @@ cursor: pointer;
 }
 
 @keyframes modalopen {
-from {
-  opacity: 0;
-}
-to {
-  opacity: 1;
-}
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
 }
 
- 
+ /* For mobile phones: */
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-     
+@media only screen and (max-width: 768px) { 
      .map-container{
          position: relative;  
          width: 100vw;
@@ -436,7 +435,7 @@ to {
         background: #3876ac;
         position: absolute;
         right: 5px; 
-        bottom: 5px;
+        bottom: 5px; 
     }
 
     .carousel-container {
@@ -448,12 +447,17 @@ to {
         background-color: rgba(0, 0, 0, 0.5); 
         margin: auto; 
     }
-     
   }
+
+  /* For screens that are in landscape */
 
   @media only screen and (orientation: landscape) {
     .rotate-device {
       display: none;
       z-index: 0;
+    }
+
+    .carousel-container {
+        display: block;  
     }
   }

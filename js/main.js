@@ -6,6 +6,7 @@
 
 // Get DOM Elements
 const modal = document.querySelector('#my-modal');
+const moreButton = document.querySelector('.modal .more');
 const modalBtn = document.querySelector('#modal-btn');
 const closeBtn = document.querySelector('.close');
 
@@ -16,10 +17,14 @@ moreCarousels.addEventListener('click', function(){
   const carouselContainer = document.querySelector('.carousel-container');
   
 
+  // Toggles more/less button in mobile devices for carousel track container
+
   if (carouselContainer.style.display === "none") {
     carouselContainer.style.display = "block";
+    moreButton.innerHTML = "Less";
   } else {
     carouselContainer.style.display = "none";
+    moreButton.innerHTML = "More";
   }
 });
 
