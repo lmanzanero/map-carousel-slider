@@ -22,8 +22,11 @@ moreCarousels.addEventListener('click', function(){
   if (carouselContainer.style.display === "none") {
     carouselContainer.style.display = "block";
     moreButton.innerHTML = "Less";
+    carouselContainer.classList.add('animated', 'fadeInUp'); 
+    
   } else {
     carouselContainer.style.display = "none";
+    // carouselContainer.classList.add('animated', 'fadeInUp');
     moreButton.innerHTML = "More";
   }
 });
