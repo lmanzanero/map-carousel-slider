@@ -84,18 +84,17 @@ body, html {
     transition: 0.5s;
 }
 
+
 .marker p { 
     visibility: visible; 
     margin: 0; 
 }
 
 
-
-
 #blackholedrop {
     position: absolute;
-    top: 7%;
-    right: 83%;
+    bottom: 10.3%;
+    left:75%;
     width: 100%;
     height: auto; 
     /* border: 2px solid green; */
@@ -103,7 +102,7 @@ body, html {
 
 #sevenmilefloat {
     position: absolute;
-    top: 80%;
+    top: 85%;
     left:10%;
     width: 100%;
     height: auto; 
@@ -128,8 +127,8 @@ body, html {
 
 #botanicalgarden {
     position: absolute;
-    top: 46%;
-    left:85%;
+    top: 44%;
+    left:81%;
     width: 100%;
     height: auto; 
 }
@@ -144,8 +143,8 @@ body, html {
 
 #waterfallcave {
     position: absolute;
-    top: 4%;
-    left:88%;
+    bottom: 10.4%;
+    right: 25%;
     width: 100%;
     height: auto; 
 }
@@ -160,7 +159,7 @@ body, html {
 
 #cabanas {
     position: absolute;
-    top: 30%;
+    top: 38%;
     left:75%;
     width: 100%;
     height: auto; 
@@ -168,15 +167,15 @@ body, html {
 
  #suite {
     position: absolute;
-    top: 24%;
-    left:65%;
+    top: 47%;
+    left:89%;
     width: 100%;
     height: auto; 
  }
 
  #gazebo {
     position: absolute;
-    top: 48%;
+    top: 47%;
     left:73%;
     width: 100%;
     height: auto;
@@ -184,7 +183,7 @@ body, html {
 
  #rivercaveexpidition {
     position: absolute;
-    top: 80%;
+    bottom: 10.3%;
     left:85%;
     width: 100%;
     height: auto; 
@@ -200,7 +199,7 @@ body, html {
 
  #restaurant {
     position: absolute;
-    top: 40%;
+    top: 39%;
     left:60%;
     width: 100%;
     height: auto; 
@@ -216,16 +215,16 @@ body, html {
 
  #riverview1 {
     position: absolute;
-    top: 46%;
-    left:20%;
+    top: 40%;
+    left:48%;
     width: 100%;
     height: auto; 
  }
 
  #riverview2 {
     position: absolute;
-    top: 40%;
-    left:31%;
+    top: 46%;
+    left:21%;
     width: 100%;
     height: auto; 
  }
@@ -267,6 +266,10 @@ background: #3876ac;
 .modal .more {
     display: none;
     background: #3876ac;
+    color: #fff;
+    border: 1px solid;
+    padding: auto;
+    border-radius: 2px;
     position: absolute; 
 }
 .slider {  
@@ -288,19 +291,20 @@ background: #3876ac;
 .slides button {
     display: none;
     position: absolute; 
-    top: 40%; 
+    top: 50%; 
     margin: auto;
     border: none;
+    font-size: 25px;
     color: #ccc;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
 
 .slides .carousel-next {
-    right: 4%;
+    right: 2%;
 }
 .slides .carousel-prev {
-    left: 4%;
+    left: 2%;
 }
  
 .carousel-container {
@@ -340,7 +344,7 @@ background: #3876ac;
 
 
 .carousel-container .carousel-next2 {
-    right: -22px;
+    right: -22px; 
 }
 .carousel-container .carousel-prev2 {
     left: -22px;
@@ -415,12 +419,7 @@ cursor: pointer;
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
     }
-    .marker p { 
-        font-size: 10px;
-        visibility: visible; 
-        margin: 0; 
-    }
-
+    
     .slides button {
         display: block;
     }
@@ -447,6 +446,30 @@ cursor: pointer;
         background-color: rgba(0, 0, 0, 0.5); 
         margin: auto; 
     }
+
+    .marker {
+        min-width: 50px;
+    }
+
+    .marker p { 
+        font-size: 10px;
+        visibility: visible; 
+        margin: 0; 
+    }
+
+    .marker i {
+        font-size: 15px !important;
+    }
+
+    /* Locatons */
+    #cabanas {
+        top: 34%;
+    }
+
+    #reception {
+        top: 17%;
+    }
+     
   }
 
   /* For screens that are in landscape */
