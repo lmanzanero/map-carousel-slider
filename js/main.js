@@ -11,7 +11,9 @@ const modalBtn = document.querySelector('#modal-btn');
 const closeBtn = document.querySelector('.close');
 
  
- 
+ document.addEventListener('DOMContentLoaded', function() {
+       document.querySelector('audio').play();
+ });
 
 
 const moreCarousels = document.querySelector('.more'); 
