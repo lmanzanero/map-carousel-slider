@@ -10,9 +10,11 @@ const moreButton = document.querySelector('.modal .more');
 const modalBtn = document.querySelector('#modal-btn');
 const closeBtn = document.querySelector('.close');
 
+ 
+ 
 
-const moreCarousels = document.querySelector('.more');
-console.log(moreCarousels.style.display);
+
+const moreCarousels = document.querySelector('.more'); 
 moreCarousels.addEventListener('click', function(){
   const carouselContainer = document.querySelector('.carousel-container');
   
@@ -38,6 +40,7 @@ window.addEventListener('click', outsideClick);
 // Open
 function openModal() {
   modal.style.display = 'block';
+  document.querySelector('audio').play();
 }
 
 // Close
@@ -104,7 +107,7 @@ let data = [
          "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-2.jpg",
          "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-3.jpg",
          "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-4.jpg",
-         "aassets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-5.jpg",
+         "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-5.jpg",
          "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-6.jpg",
          "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-7.jpg",
          "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-8.jpg"
@@ -120,7 +123,7 @@ let data = [
      riverview2: [
          "assets/Caves_Branch_Final/2 Bedroom River View house/Final/Caves Branch-1.jpg",
          "assets/Caves_Branch_Final/2 Bedroom River View house/Final/Caves Branch-2.jpg",
-         "aassets/Caves_Branch_Final/2 Bedroom River View house/Final/Caves Branch-3.jpg",
+         "assets/Caves_Branch_Final/2 Bedroom River View house/Final/Caves Branch-3.jpg",
          "assets/Caves_Branch_Final/2 Bedroom River View house/Final/Caves Branch-4.jpg"
      ],
      suite: [
@@ -182,14 +185,6 @@ let data = [
         openModal();
         
  }));
-
-//  areas.forEach(area => {
-//   area.addEventListener('mouseover', function(){
-    
-//     area.innerHTML += ``;
-//   });
-//  });
-
 
  
 //Carousel Functionalities
