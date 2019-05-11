@@ -158,7 +158,7 @@ let data = [
         "assets/Caves_Branch_Final/River Cave Exp/FINAL/River-CaveCave tubing IMG_3259.jpg"
     ],
       waterfallcave: [
-        "aassets/Caves_Branch_Final/Waterfall Cave/FINAL/1009171_CO_0358 (2).jpg",
+        "assets/Caves_Branch_Final/Waterfall Cave/FINAL/1009171_CO_0358 (2).jpg",
         "assets/Caves_Branch_Final/Waterfall Cave/FINAL/Waterfall-Cave-_MG_8085.jpg"
       ]
    }
