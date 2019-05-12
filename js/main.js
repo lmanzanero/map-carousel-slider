@@ -67,99 +67,90 @@ function outsideClick(e) {
 
 let data = [
    { 
-     pool: ["assets/Caves_Branch_Final/Pool/FINAL/Pool-1512122_CO_019.jpg", 
-            "assets/Caves_Branch_Final/Pool/FINAL/Pool-cbjl_dh-1021.jpg"
+     pool: ["assets/caves_branch_final_2/Pool/Pool-1512122_CO_019(1).jpg", 
+            "assets/caves_branch_final_2/Pool/Pool-cbjl_dh-1021(1).jpg"
           ],
-    cheesehouse: ["assets/Caves_Branch_Final/Chese House/FINAL/CheeseCavesBranch2014_85.jpg", 
-            "assets/Caves_Branch_Final/Chese House/FINAL/CheeseCheese Making Course 2013-2.jpg",
-            "assets/Caves_Branch_Final/Chese House/FINAL/CheeseGuest participate in the cheese making.jpg",
-            "assets/Caves_Branch_Final/Chese House/FINAL/CheeseGuests Enjoying our Cheese Tasting Tour.jpg",
-            "assets/Caves_Branch_Final/Chese House/FINAL/CheeseIMG_0439.jpg",
-            "assets/Caves_Branch_Final/Chese House/FINAL/CIMG2792 - Copy - Copy.JPG"
+    cheesehouse: ["assets/caves_branch_final_2/Cheese House/Caves Branch-1.jpg", 
+            "assets/caves_branch_final_2/Cheese House/CheeseCavesBranch2014_85(1).jpg"
           ],
-    botanicalgarden: ["assets/Caves_Branch_Final/Botanical/FINAL/Botanical-Botanical 1_ch.jpg", 
-                     "assets/Caves_Branch_Final/Botanical/FINAL/Botanical-Botanical 2.jpg", 
-                     "assets/Caves_Branch_Final/Botanical/FINAL/Botanical-P1160083.jpg"
+    botanicalgarden: ["assets/caves_branch_final_2/Botanical/Botanical-Botanical 1_ch(1).jpg", 
+                     "aassets/caves_branch_final_2/Botanical/Botanical-Botanical 2(1).jpg", 
+                     "assets/caves_branch_final_2/Botanical/Botanical-P1160083(1).jpg"
                     ],
     reception: [
-        "assets/Caves_Branch_Final/Welcome center/FINAL/ReceptionP1070317.jpg",
-        "assets/Caves_Branch_Final/Welcome center/FINAL/ReceptionP1070337.jpg",
-        "assets/Caves_Branch_Final/Welcome center/FINAL/Receptionunnamed-2.jpg"
+        "assets/caves_branch_final_2/Welcome Centre/ReceptionP1070317(1).jpg",
+        "assets/caves_branch_final_2/Welcome Centre/ReceptionP1070337(1).jpg",
+        "assets/caves_branch_final_2/Welcome Centre/Receptionunnamed-2(1).jpg"
     ],
     restaurant: [
-         "assets/Caves_Branch_Final/Restaurant/FINAL/Caves Branch-1.jpg",
-         "assets/Caves_Branch_Final/Restaurant/FINAL/Caves Branch-2.jpg",
-         "assets/Caves_Branch_Final/Restaurant/FINAL/Caves Branch-3.jpg",
-         "assets/Caves_Branch_Final/Restaurant/FINAL/Caves Branch-4.jpg"
+         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-1.jpg",
+         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-2.jpg",
+         "aassets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-3.jpg",
+         "aassets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-4.jpg"
     ],
      bungalow: [
-         "assets/Caves_Branch_Final/Jungle Bungalow/FINAL/Cabana-Jungle Cabana SEscalante 2.jpg",
-         "assets/Caves_Branch_Final/Jungle Bungalow/FINAL/Cabana-P1160138.jpg",
-         "assets/Caves_Branch_Final/Jungle Bungalow/FINAL/Cabana-P1160143.jpg",
-         "assets/Caves_Branch_Final/Jungle Bungalow/FINAL/Cabana-P1160147.jpg"
+         "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-Bungalow outside 1(1).jpg",
+         "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-caves_branch_jungle_lodge-belize-13.jpg",
+         "aassets/caves_branch_final_2/Jungle Bungalow/Bungalow-cbjl_dh-1019(1).jpg" 
      ],
      cabanas: [
-          "assets/Caves_Branch_Final/Jungle Cabana/FINAL/Caves Branch-1.jpg",
-          "assets/Caves_Branch_Final/Jungle Cabana/FINAL/Caves Branch-2.jpg",
-          "assets/Caves_Branch_Final/Jungle Cabana/FINAL/Caves Branch-3.jpg",
-          "assets/Caves_Branch_Final/Jungle Cabana/FINAL/Caves Branch-4.jpg"
+          "assets/caves_branch_final_2/Jungle Cabana/Cabana-Jungle Cabana SEscalante 2(1).jpg",
+          "assets/caves_branch_final_2/Jungle Cabana/Cabana-P1160138(1).jpg",
+          "assets/caves_branch_final_2/Jungle Cabana/Cabana-P1160143(1).jpg",
+          "assets/caves_branch_final_2/Jungle Cabana/Cabana-P1160147(1).jpg"
      ],
      canopyrooms: [
-         "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-1.jpg",
-         "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-2.jpg",
-         "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-3.jpg",
-         "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-4.jpg",
-         "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-5.jpg",
-         "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-6.jpg",
-         "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-7.jpg",
-         "assets/Caves_Branch_Final/Canopy Tree house/FINAL/Caves Branch-8.jpg"
+         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-34485937_1985584891460523_8131194624082444288_n 2(1).jpg",
+         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-Canopy Hot Tub(1).jpg",
+         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-Canopy(1).jpg",
+         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-cbjl400-1006(1).jpg",
+         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-cbjl400-1007(1).jpg",
+         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-cbjl400-1009(1).jpg",
+         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-cbjl400-1051(1).jpg",
+         "assets/caves_branch_final_2/Canopy Tree house/cbjl400_rework-1026.jpg"
      ],
      gazebo: [
-      "assets/Caves_Branch_Final/Jungle Gazebo/Final/GazeboP1130113.jpg"
+      "assets/caves_branch_final_2/Jungle Gazebo/GazeboP1130113(1).jpg"
   ],
      riverview1: [
-         "assets/Caves_Branch_Final/1 Bedroom river view treehouse/FINAL/Caves Branch-1.jpg",
-         "assets/Caves_Branch_Final/1 Bedroom river view treehouse/FINAL/Caves Branch-2.jpg",
-         "assets/Caves_Branch_Final/1 Bedroom river view treehouse/FINAL/Caves Branch-3.jpg"
+         "assets/caves_branch_final_1/1 Bedroom river view treehouse/Caves Branch-1.jpg",
+         "assets/caves_branch_final_1/1 Bedroom river view treehouse/Caves Branch-2.jpg",
+         "assets/caves_branch_final_1/1 Bedroom river view treehouse/Caves Branch-3.jpg"
      ], 
      riverview2: [
-         "assets/Caves_Branch_Final/2 Bedroom River View house/Final/Caves Branch-1.jpg",
-         "assets/Caves_Branch_Final/2 Bedroom River View house/Final/Caves Branch-2.jpg",
-         "assets/Caves_Branch_Final/2 Bedroom River View house/Final/Caves Branch-3.jpg",
-         "assets/Caves_Branch_Final/2 Bedroom River View house/Final/Caves Branch-4.jpg"
+         "assets/caves_branch_final_2/2 Bedroom River view treehouse/River-Tree-House-2Bed-2 bedroom(1).jpg",
+         "assets/caves_branch_final_2/2 Bedroom River view treehouse/River-Tree-House-2Bed-2-bed-riverview-2(1).jpg",
+         "assets/caves_branch_final_2/2 Bedroom River view treehouse/River-Tree-House-2Bed-the test pic_(1).jpg", 
      ],
      suite: [
-         "assets/Caves_Branch_Final/Jungle Suite/FINAL/caves_branch_jungle_lodge-belize-12.jpg",
-         "assets/Caves_Branch_Final/Jungle Suite/FINAL/Suite-cbjl_dh-1027.jpg",
-         "assets/Caves_Branch_Final/Jungle Suite/FINAL/Suite-Suite garden 2.jpg",
-         "assets/Caves_Branch_Final/Jungle Suite/FINAL/Suite-Suite.jpg"
+         "assets/caves_branch_final_2/Jungle Suite/caves_branch_jungle_lodge-belize-12.jpg",
+         "assets/caves_branch_final_2/Jungle Suite/Suite-cbjl_dh-1027(1).jpg",
+         "aassets/caves_branch_final_2/Jungle Suite/Suite-Suite garden 2(1).jpg",
+         "assets/caves_branch_final_2/Jungle Suite/Suite-Suite(1).jpg"
      ],
      sevenmilefloat: [
-      "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-Copy of tubing.jpg",
-      "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-DSCN0984.jpg",
-      "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-DSCN0988.jpg",
-      "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0002.jpg",
-      "assets/CB Caves Branch Map Final/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004.jpg",
+      "assets/caves_branch_final_2/Cave Tubing/Tubing-Copy of tubing(1).jpg",
+    "assets/caves_branch_final_2/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004(1).jpg"
 
   ],
   river: [
-    "assets/Caves_Branch_Final/Cave Tubing/FINAL/Tubing-Copy of tubing.jpg",
-    "assets/Caves_Branch_Final/Cave Tubing/FINAL/Tubing-jad.caves.branch.belize.11.06.0004.jpg", 
+    "assets/caves_branch_final_2/Cave Tubing/Tubing-Copy of tubing(1).jpg",
+    "assets/caves_branch_final_2/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004(1).jpg", 
 ],
     blackholedrop: [
-      "assets/Caves_Branch_Final/Black hole drop/FINAL/Black Hole_ch-2.jpg",
-      "assets/Caves_Branch_Final/Black hole drop/FINAL/Black-hole-1009171_CO_0047.jpg"
+      "assets/caves_branch_final_2/Black Hole drop/Black Hole_ch-2(1).jpg",
+      "assets/caves_branch_final_2/Black Hole drop/Black-hole-1009171_CO_0047.jpg"
     ],
       rivercaveexpidition: [
-        "assets/Caves_Branch_Final/River Cave Exp/FINAL/River-Cave1009171_CO_0138.jpg",
-        "assets/Caves_Branch_Final/River Cave Exp/FINAL/River-Cave1009171_CO_0150.jpg",
-        "assets/Caves_Branch_Final/River Cave Exp/FINAL/River-Cave1009171_CO_0156.jpg",
-        "assets/Caves_Branch_Final/River Cave Exp/FINAL/River-Cave1009171_CO_0235.jpg",
-        "assets/Caves_Branch_Final/River Cave Exp/FINAL/River-CaveCave tubing IMG_3259.jpg"
+        "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0138-2.jpg",
+        "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0150-2.jpg",
+        "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0156-2.jpg",
+        "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0235.jpg",
+        "assets/caves_branch_final_2/River cave Exp/River-CaveCave tubing IMG_3259-2.jpg"
     ],
       waterfallcave: [
-        "assets/Caves_Branch_Final/Waterfall Cave/FINAL/1009171_CO_0358 (2).jpg",
-        "assets/Caves_Branch_Final/Waterfall Cave/FINAL/Waterfall-Cave-_MG_8085.jpg"
+        "assets/caves_branch_final_2/Waterfall Cave Exp/Waterfall-Cave-_MG_8085(1).jpg",
+        "assets/caves_branch_final_2/Waterfall Cave Exp/waterfall-cave1009171_CO_0358 (2).jpg"
       ]
    }
 ];

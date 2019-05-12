@@ -265,7 +265,7 @@ background: #3876ac;
 
 .modal .more {
     display: none;
-    background: #3876ac;
+    background-color: rgba(13, 157, 241, 0.8); 
     color: #fff;
     border: 1px solid;
     padding: auto;
@@ -430,8 +430,7 @@ cursor: pointer;
 
     .modal .more {
         display: block;
-        margin: 0 auto;
-        background: #3876ac;
+        margin: 0 auto; 
         position: absolute;
         right: 5px; 
         bottom: 5px; 
