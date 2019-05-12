@@ -12,10 +12,7 @@ const closeBtn = document.querySelector('.close');
 
  
  document.addEventListener('DOMContentLoaded', function() {
-   const promise = document.querySelector('audio').play()
-      if(promise){
-        promise.catch(function(error) { console.error(error); });
-      }
+   document.querySelector('audio').play();
  });
 
 
