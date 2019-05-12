@@ -11,8 +11,11 @@ const modalBtn = document.querySelector('#modal-btn');
 const closeBtn = document.querySelector('.close');
 
  
- document.addEventListener('DOMContentLoaded', async function() {
-      await document.querySelector('audio').play();
+ document.addEventListener('DOMContentLoaded', function() {
+   const promise = document.querySelector('audio').play()
+      if(promise){
+        promise.catch(function(error) { console.error(error); });
+      }
  });
 
 
@@ -74,7 +77,7 @@ let data = [
             "assets/caves_branch_final_2/Cheese House/CheeseCavesBranch2014_85(1).jpg"
           ],
     botanicalgarden: ["assets/caves_branch_final_2/Botanical/Botanical-Botanical 1_ch(1).jpg", 
-                     "aassets/caves_branch_final_2/Botanical/Botanical-Botanical 2(1).jpg", 
+                     "assets/caves_branch_final_2/Botanical/Botanical-Botanical 2(1).jpg", 
                      "assets/caves_branch_final_2/Botanical/Botanical-P1160083(1).jpg"
                     ],
     reception: [
@@ -85,13 +88,13 @@ let data = [
     restaurant: [
          "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-1.jpg",
          "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-2.jpg",
-         "aassets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-3.jpg",
-         "aassets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-4.jpg"
+         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-3.jpg",
+         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-4.jpg"
     ],
      bungalow: [
          "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-Bungalow outside 1(1).jpg",
          "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-caves_branch_jungle_lodge-belize-13.jpg",
-         "aassets/caves_branch_final_2/Jungle Bungalow/Bungalow-cbjl_dh-1019(1).jpg" 
+         "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-cbjl_dh-1019(1).jpg" 
      ],
      cabanas: [
           "assets/caves_branch_final_2/Jungle Cabana/Cabana-Jungle Cabana SEscalante 2(1).jpg",
@@ -113,9 +116,10 @@ let data = [
       "assets/caves_branch_final_2/Jungle Gazebo/GazeboP1130113(1).jpg"
   ],
      riverview1: [
-         "assets/caves_branch_final_1/1 Bedroom river view treehouse/Caves Branch-1.jpg",
-         "assets/caves_branch_final_1/1 Bedroom river view treehouse/Caves Branch-2.jpg",
-         "assets/caves_branch_final_1/1 Bedroom river view treehouse/Caves Branch-3.jpg"
+         "assets/caves_branch_final_2/1 Bedroom River view treehouse/caves_branch_jungle_lodge-belize-17.jpg",
+         "assets/caves_branch_final_2/1 Bedroom River view treehouse/River-Tree-House-1Bed-Caves Branch 16(1).jpg",
+         "assets/caves_branch_final_2/1 Bedroom River view treehouse/River-Tree-House-1Bed-IMG_0382_enfusedA(1).jpg",
+         "assets/caves_branch_final_2/1 Bedroom River view treehouse/River-Tree-House-2Bed-2014-06-05 12.26.40(1).jpg"
      ], 
      riverview2: [
          "assets/caves_branch_final_2/2 Bedroom River view treehouse/River-Tree-House-2Bed-2 bedroom(1).jpg",
@@ -125,7 +129,7 @@ let data = [
      suite: [
          "assets/caves_branch_final_2/Jungle Suite/caves_branch_jungle_lodge-belize-12.jpg",
          "assets/caves_branch_final_2/Jungle Suite/Suite-cbjl_dh-1027(1).jpg",
-         "aassets/caves_branch_final_2/Jungle Suite/Suite-Suite garden 2(1).jpg",
+         "assets/caves_branch_final_2/Jungle Suite/Suite-Suite garden 2(1).jpg",
          "assets/caves_branch_final_2/Jungle Suite/Suite-Suite(1).jpg"
      ],
      sevenmilefloat: [
