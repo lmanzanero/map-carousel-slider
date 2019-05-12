@@ -11,8 +11,8 @@ const modalBtn = document.querySelector('#modal-btn');
 const closeBtn = document.querySelector('.close');
 
  
- document.addEventListener('DOMContentLoaded', function() {
-       document.querySelector('audio').play();
+ document.addEventListener('DOMContentLoaded', async function() {
+      await document.querySelector('audio').play();
  });
 
 
