@@ -402,7 +402,7 @@ cursor: pointer;
 
  /* For mobile phones: */
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 825px) { 
      .map-container{
          position: relative;  
          width: 100vw;
