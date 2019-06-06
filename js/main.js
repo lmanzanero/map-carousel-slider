@@ -36,14 +36,13 @@ function openModal() {
 }
 
 // Close
-function closeModal() {
-    console.log("closing modal");
-    
+function closeModal() { 
   modal.style.display = 'none';
 }
 
 // Close If Outside Click
 function outsideClick(e) {
+  console.log("Clicked modal", e.target);
   if (e.target == modal) {
     modal.style.display = 'none';
   }

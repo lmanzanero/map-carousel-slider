@@ -260,7 +260,9 @@ background: #3876ac;
 
 .modal-content { 
     animation-name: modalopen;
-    animation-duration: 1s;
+    animation-duration: 1s; 
+    width: 80%;
+    margin: 0 auto;
 }
 
 .modal .more {
@@ -272,9 +274,8 @@ background: #3876ac;
     border-radius: 2px;
     position: absolute; 
 }
-.slider {  
-    margin: 0 auto; 
-    width: 85%; 
+.slider {   
+    width: 100%; 
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
