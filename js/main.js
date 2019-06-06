@@ -1,9 +1,3 @@
- // //Makes map areas responsive
-// const imageResizer = imageMapResize();
-
-
-//  MODAL
-
 // Get DOM Elements
 const modal = document.querySelector('#my-modal');
 const moreButton = document.querySelector('.modal .more');
@@ -11,26 +5,22 @@ const modalBtn = document.querySelector('#modal-btn');
 const closeBtn = document.querySelector('.close');
 
  
- document.addEventListener('DOMContentLoaded', function() {
-   document.querySelector('audio').play();
- });
+//  document.addEventListener('DOMContentLoaded', function() {
+//    document.querySelector('audio').play();
+//  });
 
 
 const moreCarousels = document.querySelector('.more'); 
 moreCarousels.addEventListener('click', function(){
   const carouselContainer = document.querySelector('.carousel-container');
-  
-
   // Toggles more/less button in mobile devices for carousel track container
 
   if (carouselContainer.style.display === "none") {
     carouselContainer.style.display = "block";
     moreButton.innerHTML = "Less";
     carouselContainer.classList.add('animated', 'fadeInUp'); 
-    
-  } else {
-    carouselContainer.style.display = "none";
-    // carouselContainer.classList.add('animated', 'fadeInUp');
+   } else {
+    carouselContainer.style.display = "none"; 
     moreButton.innerHTML = "More";
   }
 });
@@ -90,8 +80,7 @@ let data = [
     ],
      bungalow: [
          "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-Bungalow outside 1(1).jpg",
-         "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-caves_branch_jungle_lodge-belize-13.jpg",
-         "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-cbjl_dh-1019(1).jpg" 
+         "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-caves_branch_jungle_lodge-belize-13.jpg"
      ],
      cabanas: [
           "assets/caves_branch_final_2/Jungle Cabana/Cabana-Jungle Cabana SEscalante 2(1).jpg",
@@ -99,29 +88,20 @@ let data = [
           "assets/caves_branch_final_2/Jungle Cabana/Cabana-P1160143(1).jpg",
           "assets/caves_branch_final_2/Jungle Cabana/Cabana-P1160147(1).jpg"
      ],
-     canopyrooms: [
-         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-34485937_1985584891460523_8131194624082444288_n 2(1).jpg",
+     canopyrooms: [ 
          "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-Canopy Hot Tub(1).jpg",
          "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-Canopy(1).jpg",
-         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-cbjl400-1006(1).jpg",
-         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-cbjl400-1007(1).jpg",
-         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-cbjl400-1009(1).jpg",
-         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-cbjl400-1051(1).jpg",
+         "assets/caves_branch_final_2/Canopy Tree house/Canopy-Tree-House-cbjl400-1006(1).jpg",  
          "assets/caves_branch_final_2/Canopy Tree house/cbjl400_rework-1026.jpg"
      ],
      gazebo: [
       "assets/caves_branch_final_2/Jungle Gazebo/GazeboP1130113(1).jpg"
   ],
      riverview1: [
-         "assets/caves_branch_final_2/1 Bedroom River view treehouse/caves_branch_jungle_lodge-belize-17.jpg",
-         "assets/caves_branch_final_2/1 Bedroom River view treehouse/River-Tree-House-1Bed-Caves Branch 16(1).jpg",
-         "assets/caves_branch_final_2/1 Bedroom River view treehouse/River-Tree-House-1Bed-IMG_0382_enfusedA(1).jpg",
-         "assets/caves_branch_final_2/1 Bedroom River view treehouse/River-Tree-House-2Bed-2014-06-05 12.26.40(1).jpg"
+         "assets/caves_branch_final_2/1 Bedroom River view treehouse/caves_branch_jungle_lodge-belize-17.jpg"
      ], 
-     riverview2: [
-         "assets/caves_branch_final_2/2 Bedroom River view treehouse/River-Tree-House-2Bed-2 bedroom(1).jpg",
-         "assets/caves_branch_final_2/2 Bedroom River view treehouse/River-Tree-House-2Bed-2-bed-riverview-2(1).jpg",
-         "assets/caves_branch_final_2/2 Bedroom River view treehouse/River-Tree-House-2Bed-the test pic_(1).jpg", 
+     riverview2: [ 
+         "assets/caves_branch_final_2/2 Bedroom River view treehouse/River-Tree-House-2Bed-the test pic_(1).jpg"
      ],
      suite: [
          "assets/caves_branch_final_2/Jungle Suite/caves_branch_jungle_lodge-belize-12.jpg",
