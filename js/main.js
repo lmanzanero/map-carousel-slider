@@ -1,3 +1,14 @@
+// Make sure sw are supported
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('../sw_cached_pages.js')
+      .then(reg => console.log('Service Worker: Registered (Pages)'))
+      .catch(err => console.log(`Service Worker: Error: ${err}`));
+  });
+}
+
+
 // Get DOM Elements
 const modal = document.querySelector('#my-modal');
 const moreButton = document.querySelector('.modal .more');
@@ -72,10 +83,10 @@ let data = [
         "assets/caves_branch_final_2/Welcome Centre/Receptionunnamed-2(1).jpg"
     ],
     restaurant: [
-         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-1.jpg",
-         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-2.jpg",
-         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-3.jpg",
-         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-4.jpg"
+        "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-3.jpg",
+        "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-2.jpg",
+        "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-4.jpg",
+        "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-1.jpg"
     ],
      bungalow: [
          "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-Bungalow outside 1(1).jpg",
