@@ -161,7 +161,7 @@ let data = [
         //append all images for current area to glider dom element
         currentAreaImgs.map(img =>  {
           carousels.innerHTML += `
-              <div class="img-container"><img class="image" src="${img}"/></div>
+              <div class="img-container"><img class="image lazyload" src="${img}"/></div>
             `;
           }); 
 
