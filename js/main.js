@@ -2,7 +2,7 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('sw_cached_pages.js')
+      .register('../sw_cached_pages.js')
       .then(reg => console.log('Service Worker: Registered (Pages)'))
       .catch(err => console.log(`Service Worker: Error: ${err}`));
   });
@@ -161,7 +161,7 @@ let data = [
         //append all images for current area to glider dom element
         currentAreaImgs.map(img =>  {
           carousels.innerHTML += `
-              <div class="img-container"><img class="image lazyload" src="${img}"/></div>
+              <div class="img-container"><img class="image" src="${img}"/></div>
             `;
           }); 
 
