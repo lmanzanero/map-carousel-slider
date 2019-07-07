@@ -83,8 +83,10 @@ let data = [
          "assets/caves_branch_final_2/Jungle Bungalow/cbjl_dh-1019 (1).jpg",
          "assets/caves_branch_final_2/Jungle Bungalow/cbjl_dh-1022 (1).jpg"
      ],
-     cabanas: [
-          "assets/caves_branch_final_2/Jungle Cabana/Cabana-P1160143(1)-2.jpg"
+     cabanas: [ 
+          "assets/caves_branch_final_2/Jungle Cabana/CavesBranch-Jungle-Cabana_2287.jpg",
+          "assets/caves_branch_final_2/Jungle Cabana/CavesBranch-Jungle-Cabana_2313.jpg",
+          "assets/caves_branch_final_2/Jungle Cabana/CavesBranch-Jungle-Cabana_2349.jpg"
      ],
      canopyrooms: [ 
          "assets/caves_branch_final_2/Canopy Tree house/cbjl400-1007.jpg",
