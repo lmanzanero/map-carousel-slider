@@ -57,8 +57,8 @@ function outsideClick(e) {
 
 let data = [
    { 
-     pool: ["assets/caves_branch_final_2/Pool/Pool-1512122_CO_019(1).jpg", 
-            "assets/caves_branch_final_2/Pool/Pool-cbjl_dh-1021(1).jpg"
+     pool: ["assets/caves_branch_final_2/Pool/1512122_CO_019.jpg", 
+            "assets/caves_branch_final_2/Pool/cbjl_dh-1021.jpg"
           ],
     cheesehouse: ["assets/caves_branch_final_2/Cheese House/Caves Branch-1.jpg", 
             "assets/caves_branch_final_2/Cheese House/CheeseCavesBranch2014_85(1).jpg"
@@ -68,9 +68,9 @@ let data = [
                      "assets/caves_branch_final_2/Botanical/Botanical-P1160083(1).jpg"
                     ],
     reception: [
-        "assets/caves_branch_final_2/Welcome Centre/ReceptionP1070317(1).jpg",
-        "assets/caves_branch_final_2/Welcome Centre/ReceptionP1070337(1).jpg",
-        "assets/caves_branch_final_2/Welcome Centre/Receptionunnamed-2(1).jpg"
+        "assets/caves_branch_final_2/Welcome Centre/P1070317.jpg",
+        "assets/caves_branch_final_2/Welcome Centre/P1070337.jpg",
+        "assets/caves_branch_final_2/Welcome Centre/Receptionunnamed-2.jpg"
     ],
     restaurant: [
         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-3.jpg",
@@ -78,17 +78,17 @@ let data = [
         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-4.jpg",
         "assets/caves_branch_final_2/Restaurant/Restaurant-Cave Branch-1.jpg"
     ],
-     bungalow: [ 
+    bungalow: [ 
          "assets/caves_branch_final_2/Jungle Bungalow/Bungalow-caves_branch_jungle_lodge-belize-13.jpg",
          "assets/caves_branch_final_2/Jungle Bungalow/cbjl_dh-1019 (1).jpg",
          "assets/caves_branch_final_2/Jungle Bungalow/cbjl_dh-1022 (1).jpg"
      ],
-     cabanas: [ 
+    cabanas: [ 
           "assets/caves_branch_final_2/Jungle Cabana/CavesBranch-Jungle-Cabana_228.jpg",
           "assets/caves_branch_final_2/Jungle Cabana/CavesBranch-Jungle-Cabana_231.jpg",
           "assets/caves_branch_final_2/Jungle Cabana/CavesBranch-Jungle-Cabana_234.jpg"
      ],
-     canopyrooms: [ 
+    canopyrooms: [ 
          "assets/caves_branch_final_2/Canopy Tree house/cbjl400-1007.jpg",
          "assets/caves_branch_final_2/Canopy Tree house/cbjl400-1009.jpg",  
          "assets/caves_branch_final_2/Canopy Tree house/cbjl400-1051.jpg",
@@ -97,7 +97,7 @@ let data = [
      ],
      gazebo: [
       "assets/caves_branch_final_2/Jungle Gazebo/GazeboP1130113(1).jpg"
-  ],
+     ],
      riverview1: [
          "assets/caves_branch_final_2/1 Bedroom River view treehouse/caves_branch_jungle_lodge-belize-17.jpg"
      ], 
@@ -116,28 +116,31 @@ let data = [
       "assets/caves_branch_final_2/Cave Tubing/Tubing-Copy of tubing(1).jpg",
     "assets/caves_branch_final_2/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004(1).jpg"
 
-  ],
-  river: [
-    "assets/caves_branch_final_2/Cave Tubing/Tubing-Copy of tubing(1).jpg",
-    "assets/caves_branch_final_2/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004(1).jpg", 
-],
-    blackholedrop: [
-      "assets/caves_branch_final_2/Black Hole drop/Black Hole_ch-2(1).jpg",
-      "assets/caves_branch_final_2/Black Hole drop/Black-hole-1009171_CO_0047.jpg"
     ],
-      rivercaveexpidition: [
-        "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0138-2.jpg",
-        "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0150-2.jpg",
-        "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0156-2.jpg",
-        "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0235.jpg",
-        "assets/caves_branch_final_2/River cave Exp/River-CaveCave tubing IMG_3259-2.jpg"
+    river: [
+      "assets/caves_branch_final_2/Cave Tubing/Tubing-Copy of tubing(1).jpg",
+      "assets/caves_branch_final_2/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004(1).jpg", 
     ],
-      waterfallcave: [
-        "assets/caves_branch_final_2/Waterfall Cave Exp/Waterfall-Cave-_MG_8085(1).jpg",
-        "assets/caves_branch_final_2/Waterfall Cave Exp/waterfall-cave1009171_CO_0358 (2).jpg"
-      ]
-   }
-];
+      blackholedrop: [
+        "assets/caves_branch_final_2/Black Hole drop/Black Hole_ch-2(1).jpg",
+        "assets/caves_branch_final_2/Black Hole drop/Black-hole-1009171_CO_0047.jpg"
+      ],
+        rivercaveexpidition: [
+          "assets/caves_branch_final_2/River cave Exp/1009171_CO_0138.jpg",
+          "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0150-2.jpg",
+          "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0156-2.jpg",
+          "assets/caves_branch_final_2/River cave Exp/River-Cave1009171_CO_0235.jpg",
+          "assets/caves_branch_final_2/River cave Exp/Cave tubing IMG_3259.jpg"
+      ],
+        waterfallcave: [
+          "assets/caves_branch_final_2/Waterfall Cave Exp/Waterfall-Cave-_MG_8085(1).jpg",
+          "assets/caves_branch_final_2/Waterfall Cave Exp/waterfall-cave1009171_CO_0358 (2).jpg",
+          "assets/caves_branch_final_2/Waterfall Cave Exp/1009171_CO_0150.jpg",
+          "assets/caves_branch_final_2/Waterfall Cave Exp/1009171_CO_0156.jpg",
+          "assets/caves_branch_final_2/Waterfall Cave Exp/1009171_CO_0235.jpg"
+        ]
+      }
+    ];
  
 
 //adds a click listener for each area on map
