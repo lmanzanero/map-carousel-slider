@@ -115,7 +115,7 @@ let data = [
     botanicalgarden: [
                     "assets/caves_branch_final_2/Botanical/Botanical 1_ch.jpg", 
                     "assets/caves_branch_final_2/Botanical/Botanical 2.jpg", 
-                     "aassets/caves_branch_final_2/Botanical/Botanical-P1160083.jpg"
+                     "assets/caves_branch_final_2/Botanical/Botanical-P1160083.jpg"
                     ],
     reception: [
         "assets/caves_branch_final_2/Welcome Centre/P1070317.jpg",
