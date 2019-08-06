@@ -110,11 +110,12 @@ let data = [
             "assets/caves_branch_final_2/Pool/cbjl_dh-1021.jpg"
           ],
     cheesehouse: ["assets/caves_branch_final_2/Cheese House/Caves Branch-1.jpg", 
-            "assets/caves_branch_final_2/Cheese House/CheeseCavesBranch2014_85(1).jpg"
+                 "assets/caves_branch_final_2/Cheese House/CheeseCavesBranch2014_85(1).jpg"
           ],
-    botanicalgarden: ["assets/caves_branch_final_2/Botanical/Botanical-Botanical 1_ch(1).jpg", 
-                     "assets/caves_branch_final_2/Botanical/Botanical-Botanical 2(1).jpg", 
-                     "assets/caves_branch_final_2/Botanical/Botanical-P1160083(1).jpg"
+    botanicalgarden: [
+                    "assets/caves_branch_final_2/Botanical/Botanical 1_ch.jpg", 
+                    "assets/caves_branch_final_2/Botanical/Botanical 2.jpg", 
+                     "aassets/caves_branch_final_2/Botanical/Botanical-P1160083.jpg"
                     ],
     reception: [
         "assets/caves_branch_final_2/Welcome Centre/P1070317.jpg",
