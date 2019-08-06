@@ -1,4 +1,53 @@
+//lazy load images
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages;    
 
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazy");
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.src = image.dataset.src;
+          image.classList.remove("lazy");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {  
+    var lazyloadThrottleTimeout;
+    lazyloadImages = document.querySelectorAll(".lazy");
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+
+      lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+      }, 20);
+    }
+
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  }
+})
 // Get DOM Elements
 const modal = document.querySelector('#my-modal');
 const moreButton = document.querySelector('.modal .more');
@@ -114,7 +163,7 @@ let data = [
      ],
      sevenmilefloat: [
       "assets/caves_branch_final_2/Cave Tubing/Tubing-Copy of tubing(1).jpg",
-    "assets/caves_branch_final_2/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004(1).jpg"
+     "assets/caves_branch_final_2/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004.jpg"
 
     ],
     river: [
@@ -157,13 +206,12 @@ let data = [
         //append all images for current area to glider dom element
         currentAreaImgs.map(img =>  {
           carousels.innerHTML += `
-              <div class="img-container"><img class="image" src="${img}"/></div>
+              <div class="img-container"><img class="image lazy" src="${img}"/></div>
             `;
           }); 
 
         carouselFunctions();
         openModal();
-        
  }));
 
  
