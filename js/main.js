@@ -122,8 +122,8 @@ let data = [
       "assets/caves_branch_final_2/Cave Tubing/Tubing-jad.caves.branch.belize.11.06.0004(1).jpg", 
     ],
       blackholedrop: [
-        "assets/caves_branch_final_2/Black Hole drop/Black Hole_ch-2(1).jpg",
-        "assets/caves_branch_final_2/Black Hole drop/Black-hole-1009171_CO_0047.jpg"
+        "assets/caves_branch_final_2/Black Hole drop/1009171_CO_0047.jpg",
+        "assets/caves_branch_final_2/Black Hole drop/Black Hole_ch.jpg"
       ],
         rivercaveexpidition: [
           "assets/caves_branch_final_2/River cave Exp/1009171_CO_0138.jpg",
